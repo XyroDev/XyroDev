@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tailwind.css">
+        <link rel="stylesheet" href="../tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+ <div class="w-screen h-screen">
+<section class="bg-gray-900">
+  <div class="flex flex-wrap">
+    <div class="w-full lg:w-1/2 px-5">
+      <div class="pt-12 pb-12 md:pt-24 lg:pt-32 md:pb-24 xl:pb-56 md:px-8">
+        <div class="max-w-sm mx-auto">
+          <h3 class="font-heading tracking-tight text-4xl font-bold text-white mb-4">Login</h3>
+          <p class="text-gray-400 mb-8">Sign in or create your account</p>
+          <form method="POST" action="/auth/login/submit" id="login-form">
+            <a class="inline-flex w-full h-12 py-2 px-5 items-center justify-center text-base font-bold text-gray-700 hover:text-yellowGreen-700 bg-white border border-gray-200 hover:border-yellowGreen-600 shadow-sm hover:shadow-none rounded-lg transition duration-200" href="#">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 1.91663C12.0354 1.91663 13.89 2.67488 15.3114 3.91834L13.3034 5.92639C12.4018 5.19322 11.2539 4.74996 10 4.74996C7.10068 4.74996 4.75 7.10064 4.75 9.99996C4.75 12.8993 7.10068 15.25 10 15.25C12.286 15.25 14.2241 13.7867 14.9452 11.7501L15.0633 11.4166H14.7096H10.25V8.58329H17.25V8.61788H17.5H17.9634C18.0412 9.06748 18.0833 9.52903 18.0833 9.99996C18.0833 14.464 14.464 18.0833 10 18.0833C5.53599 18.0833 1.91667 14.464 1.91667 9.99996C1.91667 5.53595 5.53599 1.91663 10 1.91663Z" fill="#FFC107" stroke="#3B5444" stroke-width="0.5"></path>
+                <path d="M2.6275 6.12121L5.36542 8.12913C6.10625 6.29496 7.90042 4.99996 10 4.99996C11.2746 4.99996 12.4342 5.48079 13.3171 6.26621L15.6742 3.90913C14.1858 2.52204 12.195 1.66663 10 1.66663C6.79917 1.66663 4.02333 3.47371 2.6275 6.12121Z" fill="#FF3D00"></path>
+                <path d="M10 18.3334C12.1525 18.3334 14.1083 17.5096 15.5871 16.17L13.0079 13.9875C12.1431 14.6452 11.0864 15.0009 10 15C7.8325 15 5.99208 13.618 5.29875 11.6892L2.58125 13.783C3.96042 16.4817 6.76125 18.3334 10 18.3334Z" fill="#4CAF50"></path>
+                <path d="M18.1713 8.36796H17.5V8.33337H10V11.6667H14.7096C14.3809 12.5902 13.7889 13.3972 13.0067 13.988L13.0079 13.9871L15.5871 16.1696C15.4046 16.3355 18.3333 14.1667 18.3333 10C18.3333 9.44129 18.2758 8.89587 18.1713 8.36796Z" fill="#1976D2"></path>
+              </svg>
+              <span class="ml-2">Login with Google</span>
+            </a>
+            <div class="my-8 flex items-center">
+              <div class="h-px w-full bg-gray-700"></div>
+              <span class="inline-block mx-4 text-xs font-medium text-gray-500">OR</span>
+              <div class="h-px w-full bg-gray-700"></div>
+            </div>
+            <div class="mb-8">
+              <label class="block mb-2 text-sm font-medium text-white" for="">Email</label>
+              <input name="email" id="email" class="py-2 px-4 h-12 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-teal-800 outline-none ring ring-transparent focus:ring-teal-800 rounded-lg" type="email" placeholder="Enter your email address">
+            </div>
+            <div class="mb-2">
+              <label class="block mb-2 text-sm font-medium text-white" for="">Password</label>
+              <div class="relative">
+                <input name="password" id="password" class="relative py-2 px-4 h-12 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-teal-800 outline-none ring ring-transparent focus:ring-teal-800 rounded-lg" type="password" placeholder="Enter password">
+                <button class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block focus:outline-none text-gray-500 hover:text-yellowGreen-600">
+                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 10.8334C5.5 4.16671 14.5 4.16671 17.5 10.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M10 14.1666C8.61929 14.1666 7.5 13.0473 7.5 11.6666C7.5 10.2859 8.61929 9.16663 10 9.16663C11.3807 9.16663 12.5 10.2859 12.5 11.6666C12.5 13.0473 11.3807 14.1666 10 14.1666Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="text-right mb-8"><a class="inline-block text-sm font-semibold text-yellowGreen-600 hover:text-yellowGreen-500" href="#">Forgot Password?</a></div>
+            <button class="xs:flex-shrink-0 group relative w-full h-12 flex items-center justify-center px-4 p-px font-bold text-gray-900 bg-yellowGreen-600 rounded-lg transition-all duration-300 focus:outline-none" type="submit">
+              <div class="absolute top-0 left-0 w-full h-full rounded-lg ring ring-yellowGreen-900 animate-pulse group-hover:ring-0 transition duration-300"></div>
+              <span>Login</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <div class="relative flex flex-col max-w-md mx-auto lg:max-w-none h-full pt-8 pb-12 px-10 overflow-hidden">
+        <div class="relative z-10 flex items-center justify-end">
+          <a class="inline-flex mr-10 items-center leading-loose text-white text-sm font-semibold hover:text-yellowGreen-600" href="#"></a>
+          <a class="group flex justify-center h-12 p-1 text-center leading-loose text-sm text-white font-semibold rounded-lg" href="#">
+            <div class="inline-flex items-stretch w-full h-full p-0.5 rounded-lg bg-gradient-to-b from-gray-500 via-gray-700 to-gray-700 hover:to-gray-800">
+              <div class="flex w-full items-center justify-center px-4 bg-gray-700 group-hover:bg-opacity-40 rounded-md transition duration-300">
+                <span>Not Registered? Sign up</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="relative z-10 my-auto py-24">
+          <img class="block mx-auto" src="../aurora-assets/sign-up/logo-center-green.png" alt="">
+        </div>
+        <img class="hidden md:block absolute top-0 left-0 w-full xl:-mt-52" src="../aurora-assets/sign-up/pattern-line-dark1.png" alt="">
+        <img class="hidden lg:block absolute bottom-0 left-0 w-full" src="../aurora-assets/sign-up/pattern-line-dark2.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+</body>
+</html>
