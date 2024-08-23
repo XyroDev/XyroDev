@@ -1,0 +1,31 @@
+Date : 2022-06-25 20:14:17
+Directory : c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src
+Total : 5 files,  97 codes, 0 comments, 14 blanks, all 111 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          5 |         97 |          0 |         14 |        111 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |          5 |         97 |          0 |         14 |        111 |
+| Routes                                                                                                                 |          1 |          5 |          0 |          0 |          5 |
+| Utils                                                                                                                  |          2 |         30 |          0 |          6 |         36 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                               | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src\App.js             | JavaScript |         56 |          0 |          7 |         63 |
+| c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src\Routes\Main.js     | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src\Server.js          | JavaScript |          6 |          0 |          1 |          7 |
+| c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src\Utils\Database.js  | JavaScript |         22 |          0 |          3 |         25 |
+| c:\Users\beats\Desktop\Dev\Clients\Krios\StupidYouthGroupCenterTypeWebsite-AlsoVexyIsStillADick\src\Utils\Functions.js | JavaScript |          8 |          0 |          3 |         11 |
+| Total                                                                                                                  |            |         97 |          0 |         14 |        111 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
