@@ -5,8 +5,8 @@ const { getRandomString, verifyLogin, authCheckEmail, authCheckUsername, validat
 const sanitizer = require('sanitizer')
 const moment = require('moment')
 const nodemailer = require('nodemailer')
-const accountSid = 'ACbe0472d751d0eaf406a158749948cbc7';
-const authToken = '93e1de01700cc299021c7971deb56b3f';
+const accountSid = 'null';
+const authToken = 'null';
 const client = require('twilio')(accountSid, authToken);
 const session = require('express-session')
 const pool = require('../Utils/Database')
